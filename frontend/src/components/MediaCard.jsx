@@ -28,13 +28,13 @@ export default function MediaCard({ item, isSaved, onToggleWatchlist, onSelectDe
                     <button
                         onClick={() => onToggleWatchlist(item)}
                         className={`text-xs px-2.5 py-1.5 rounded-lg border transition-all ${isSaved
-                                ? 'bg-rose-600/20 border-rose-500/40 text-rose-400'
-                                : 'bg-slate-950 border-slate-800 text-slate-400 hover:text-white'
+                            ? 'bg-rose-600/20 border-rose-500/40 text-rose-400'
+                            : 'bg-slate-950 border-slate-800 text-slate-400 hover:text-white'
                             }`}
                     >
                         {isSaved ? 'Saved' : '+ Watchlist'}
                     </button>
-                    
+
                     <button
                         onClick={() => onSelectDetails(item)}
                         className="bg-slate-800 hover:bg-slate-700 text-white text-xs px-3 py-1.5 rounded-lg transition"
