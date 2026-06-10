@@ -1,5 +1,4 @@
-// Banner.jsx
-export function Banner() {
+export default function Banner() {
   return (
     <div className="text-center mb-12">
       <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-3">Discover Your Next Obsession</h2>
@@ -9,5 +8,3 @@ export function Banner() {
     </div>
   );
 }
-
-// LoadingSpinner.jsx
