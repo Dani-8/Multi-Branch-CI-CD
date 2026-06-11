@@ -17,9 +17,17 @@ const USERS_DATABASE = [
 // ============================================
 // ============================================
 
+// Basic health check endpoint
+app.get("/", (req, res) => {
+    res.status(200).json({ 
+        status: "success",
+        env: process.env.NODE_ENV || "development",
+        message: "Welcome to the Media API" })
+})
+
 // API endpoint to get media list
 app.get("/api/media", (req, res) => {
-    res.status(200).json(MEDIA_DATABASE)
+    res.status(200).json(USERS_DATABASE)
 })
 
 
