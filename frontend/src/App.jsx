@@ -10,7 +10,6 @@ import MediaGrid from './components/MediaGrid';
 import MediaModal from './components/MediaModal';
 
 export default function App() {
-  // Consume our clean custom hook
   const {
     mediaList,
     search,
@@ -72,5 +71,5 @@ export default function App() {
         onToggleWatchlist={toggleWatchlist}
       />
     </div>
-  );
+  )
 }

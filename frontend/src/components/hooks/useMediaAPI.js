@@ -2,20 +2,22 @@ import { useState, useEffect } from 'react'
 import { LOCAL_MEDIA_DB } from '../data/mockData'
 
 export default function useMediaAPI() {
-    const [mediaList, setMediaList] = useState(LOCAL_MEDIA_DB);
-    const [search, setSearch] = useState('');
-    const [selectedType, setSelectedType] = useState('');
-    const [loading, setLoading] = useState(false);
-    const [environment, setEnvironment] = useState('development (offline/local)');
-    const [apiStatus, setApiStatus] = useState('Local Mode');
+    const [mediaList, setMediaList] = useState(LOCAL_MEDIA_DB)
+    const [search, setSearch] = useState('')
+    const [selectedType, setSelectedType] = useState('')
+    const [loading, setLoading] = useState(false)
+    const [environment, setEnvironment] = useState('development (offline/local)')
+    const [apiStatus, setApiStatus] = useState('Local Mode')
+    
 
     const API_BASE_URL = typeof window !== 'undefined' &&
         (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
         ? 'http://localhost:5000'
-        : typeof window !== 'undefined' ? window.location.origin : '';
+        : typeof window !== 'undefined' ? window.location.origin : ''
     // ========================================================================================
     // ========================================================================================
     // ========================================================================================
+
 
     useEffect(() => {
         const pingBackend = async () => {
