@@ -2,7 +2,7 @@ const request = require("supertest")
 const app = require("./server")
 
 describe("API Tests", () => {
-
+    // Test no.1: Test the root endpoint
     test("GET / should return success", async () => {
         const res = await request(app).get("/")
 
