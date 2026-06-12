@@ -10,6 +10,7 @@ describe("API Tests", () => {
         expect(res.body.status).toBe("success")
     })
 
+    // Test no.2: Test the /api/user endpoint
     test("GET /api/user should return users", async () => {
         const res = await request(app).get("/api/user")
 
