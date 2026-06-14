@@ -1,0 +1,6 @@
+name: CI-CD Pipeline (Main Branch)
+
+on:
+    push:
+        branches:
+            - "main"
