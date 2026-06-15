@@ -12,12 +12,22 @@ describe("API Tests", () => {
         expect(res.body.status).toBe("success")
     })
 
-    // Test no.2: Test the /api/user endpoint
-    test("GET /api/user should return users", async () => {
-        const res = await request(app).get("/api/user")
+    // Test no.2: Test the /api/users endpoint
+    test("GET /api/users should return users", async () => {
+        const res = await request(app).get("/api/users")
+
+        expect(res.statusCode).toBe(200)
+        expect(Array.isArray(res.body)).toBe(true)
+        expect(res.body.length).toBeGreaterThan(0)
+    })
+
+    // Test no.3: Test the /api/managers-specialists endpoint
+    test("GET /api/managers-specialists should return only managers and specialists", async () => {
+        const res = await request(app).get("/api/managers-specialists")
 
         expect(res.statusCode).toBe(200)
         expect(Array.isArray(res.body)).toBe(true)
         expect(res.body.length).toBeGreaterThan(0)
     })
 })
+
