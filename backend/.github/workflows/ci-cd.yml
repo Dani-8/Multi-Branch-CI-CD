@@ -25,7 +25,7 @@ jobs:
             - name: Run test Suite
               run: npm test
 
-              
+               
     build-and-push:
         needs: test-and-lint
         runs-on: ubuntu-latest
