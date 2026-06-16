@@ -3,7 +3,7 @@ name: Staging CI-CD (Develop Branch)
 on:
   push:
     branches:
-      - main
+      - dev
 
 jobs:
   test-and-lint:
@@ -28,7 +28,8 @@ jobs:
         working-directory: ./backend
         run: npm test
 
-  build-and-push:
+        
+  build-and-push-dev:
     needs: test-and-lint
     runs-on: ubuntu-latest
 
