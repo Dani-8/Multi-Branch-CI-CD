@@ -1,4 +1,4 @@
-# Employee Backend API — Multi-Branch CI/CD & Docker Pipeline
+# Employee Backend API — Multi-Branch CI/CD (GitHub Actions + Docker) Pipeline
 
 A production-ready, backend-only Node.js service engineered with a modular architecture, comprehensive test suites, multi-stage Alpine Docker virtualization, and an automated multi-branch GitHub Actions CI/CD pipeline simulating real-world enterprise deployment strategies.
 
