@@ -23,14 +23,15 @@ A production-ready, backend-only Node.js service engineered with a modular archi
 ```
 .github/
 └─ workflows/
-   ├─ dev-ci-cd.yml       # Staging Pipeline (Triggers on 'dev' branch)
-   └─ prod-ci-cd.yml      # Production Pipeline (Triggers on 'main' branch)
-.dockerignore             # Docker build optimization exclusions
-.gitignore                # Git exclusion rules
-Dockerfile                # Multi-stage optimized build specification
-package.json              # Project dependencies and scripts
-server.js                 # Express application entrypoint
-server.test.js            # Automated verification test suite
+   ├─ dev-ci-cd.yml           # Staging Pipeline (Triggers on 'dev' branch)
+   └─ prod-ci-cd.yml          # Production Pipeline (Triggers on 'main' branch)
+backend/
+├─ .dockerignore              # Docker build optimization exclusions
+├─ .gitignore                 # Git exclusion rules
+├─  Dockerfile                # Multi-stage optimized build specification
+├─  package.json              # Project dependencies and scripts
+├─  server.js                 # Express application entrypoint
+└─  server.test.js            # Automated verification test suite
 ```
 
 ---
